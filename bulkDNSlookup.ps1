@@ -1,4 +1,4 @@
-$computers = Get-Content C:\users\pand0ra\Desktop\External-IPs.lst
+$computers = Get-Content C:\IPs.lst
 
 workflow lookupparallel {
     param([string[]]$computers)
@@ -10,4 +10,4 @@ workflow lookupparallel {
  }
 
 
-lookupparallel -computers $computers | out-file C:\users\pand0ra\Desktop\lookup2.txt
+lookupparallel -computers $computers | out-file C:\lookup.txt
